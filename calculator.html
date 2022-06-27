@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./calculator.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div id="calculatorBody">
+      <div>
+        <input id="AC" type="button" onclick="clearAll()" value="AC" />
+        <span id="answer">0</span>
+      </div>
+      <div class="row"></div>
+      <div class="row">
+        <input type="button" onclick="numberButton('7')" value="7" />
+        <input type="button" onclick="numberButton('8')" value="8" />
+        <input type="button" onclick="numberButton('9')" value="9" />
+        <input type="button" onclick="numberButton('+')" value="+" />
+      </div>
+      <div class="row">
+        <input type="button" onclick="numberButton('4')" value="4" />
+        <input type="button" onclick="numberButton('5')" value="5" />
+        <input type="button" onclick="numberButton('6')" value="6" />
+        <input type="button" onclick="numberButton('-')" value="-" />
+      </div>
+      <div class="row">
+        <input type="button" onclick="numberButton('1')" value="1" />
+        <input type="button" onclick="numberButton('2')" value="2" />
+        <input type="button" onclick="numberButton('3')" value="3" />
+        <input type="button" onclick="numberButton('*')" value="*" />
+      </div>
+      <div class="row">
+        <input type="button" onclick="numberButton('0')" value="0" />
+        <input type="button" onclick="numberButton('.')" value="." />
+        <input id="equals" type="button" value="=" onclick="button1()" />
+        <input type="button" value="/" />
+      </div>
+    </div>
+    <script src="./calculator.js"></script>
+  </body>
+</html>
