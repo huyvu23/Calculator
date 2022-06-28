@@ -89,9 +89,9 @@ const arrButton = [
   },
   {
     name: "multiply",
-    label: "x",
+    label: "*",
     class: "operator",
-    clickOp: "operatorButton('x')",
+    clickOp: "operatorButton('*')",
   },
   {
     name: "divide",
@@ -115,17 +115,12 @@ const createButton = () => {
     >${item.label}</button>`;
   });
 };
-
 createButton();
 
 function calculateQueue(value) {
-  console.log(value);
   // value is total element
   if (input !== 0) {
     input = parseFloat(input);
-    // input is index 2
-    console.log("input", input);
-
     addToQueue(input);
   }
   // first element
@@ -170,6 +165,8 @@ function calculateQueue(value) {
 function addToQueue(input) {
   queue.push(input);
 }
+
+// reset all
 function clearAll() {
   queue = [];
   input = 0;
@@ -180,7 +177,6 @@ function numberButton(arg) {
   if (screen.innerHTML === "ERROR" || (screen.innerHTML == "0" && arg != ".")) {
     screen.innerHTML = "";
   }
-
   if (!(arg === ".") || !input.match(/[.]/)) {
     input += arg;
     screen.innerHTML += arg;
@@ -197,7 +193,6 @@ function operatorButton(arg) {
   }
   if (arg == "-" && isNaN(queue[0]) && input !== "-") {
     input = "-";
-
     screen.innerHTML = "-";
   }
 }

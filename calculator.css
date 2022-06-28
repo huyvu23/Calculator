@@ -7,6 +7,7 @@ body {
 
 .container {
   display: flex;
+  height: 100vh;
 }
 
 .calculator {
@@ -14,8 +15,7 @@ body {
   height: 600px;
   border: 1px solid #000;
   background-color: #ccc;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto auto;
   border-radius: 5px;
 }
 
@@ -28,7 +28,7 @@ body {
   background-color: white;
   border-radius: 5px;
   font-size: 25px;
-  padding: 5px 0 0 5px;
+  padding: 7px 0 0 7px;
 }
 
 .calculator-button {
@@ -84,6 +84,10 @@ body {
 
 .clear-button:hover {
   cursor: pointer;
+}
+
+button > #equal {
+  width: 320px;
 }
 
 #clear {
