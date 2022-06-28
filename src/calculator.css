@@ -13,10 +13,10 @@ body {
 .calculator {
   width: 400px;
   height: 600px;
-  border: 1px solid #000;
-  background-color: #ccc;
+  border: 1px solid var(--black-color);
+  background-color: var(--gray-color);
   margin: auto auto;
-  border-radius: 5px;
+  border-radius: var(--border);
 }
 
 .calculator-screen {
@@ -25,8 +25,8 @@ body {
   margin-top: 20px;
   height: 65px;
   width: 85%;
-  background-color: white;
-  border-radius: 5px;
+  background-color: var(--white-color);
+  border-radius: var(--border);
   font-size: 25px;
   padding: 7px 0 0 7px;
 }
@@ -43,36 +43,36 @@ body {
   width: 80px;
   height: 80px;
   font-size: 20px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  box-shadow: 2px 2px 4px;
+  border-radius: var(--border);
+  border: 1px solid var(--gray-color);
+  box-shadow: var(--shadow);
 }
 
 .operator {
   width: 80px;
   height: 80px;
   font-size: 20px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  box-shadow: 2px 2px 4px;
+  border-radius: var(--border);
+  border: 1px solid var(--gray-color);
+  box-shadow: var(--shadow);
 }
 
 #plus {
-  background-color: #7c93df;
-  box-shadow: 2px 2px 4px;
+  background-color: var(--plus-color);
+  box-shadow: var(--shadow);
 }
 
 #minus {
-  background-color: #f08080;
-  box-shadow: 2px 2px 4px;
+  background-color: var(--minus-color);
+  box-shadow: var(--shadow);
 }
 
 #multiply {
-  background-color: #ffa500;
-  box-shadow: 2px 2px 4px;
+  background-color: var(--multiply-color);
+  box-shadow: var(--shadow);
 }
 #divide {
-  background-color: #20b1a9;
+  background-color: var(--divide-color);
 }
 .number:hover {
   cursor: pointer;
@@ -86,14 +86,10 @@ body {
   cursor: pointer;
 }
 
-button > #equal {
-  width: 320px;
-}
-
 #clear {
-  background-color: red;
-  color: white;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  background-color: var(--red-color);
+  color: var(--white-color);
+  border: 1px solid var(--gray-color);
+  border-radius: var(--border);
   box-shadow: 2px 2px 4px;
 }

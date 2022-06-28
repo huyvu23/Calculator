@@ -1,0 +1,12 @@
+:root {
+  --white-color: #fff;
+  --black-color: #000;
+  --gray-color: #ccc;
+  --red-color: red;
+  --border: 5px;
+  --plus-color: #7c93df;
+  --minus-color: #f08080;
+  --multiply-color: #ffa500;
+  --divide-color: #20b1a9;
+  --shadow: 2px 2px 4px;
+}

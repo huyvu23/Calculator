@@ -2,6 +2,7 @@ let buttonGroups = document.querySelector(".calculator-button");
 let screen = document.querySelector(".calculator-screen");
 let queue = [];
 let input = 0;
+let lastResult = 0;
 const arrButton = [
   {
     name: "clear",
@@ -148,6 +149,7 @@ function calculateQueue(value) {
         answer = answer * value[i];
         break;
     }
+    this.lastResult = answer;
   }
   // (Number).toFixed(amount number want to show);
   answer = answer.toFixed(10);
@@ -174,6 +176,11 @@ function clearAll() {
 }
 
 function numberButton(arg) {
+  console.log("lastResult :", this.lastResult);
+  if (this.lastResult != 0) {
+    clearAll();
+    this.lastResult = 0;
+  }
   if (screen.innerHTML === "ERROR" || (screen.innerHTML == "0" && arg != ".")) {
     screen.innerHTML = "";
   }
