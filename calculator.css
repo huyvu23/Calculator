@@ -2,42 +2,94 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #eac8c8;
+  background-color: #f3ecec;
 }
 
-#calculatorBody {
-  width: 360px;
-  background: #fae6e8;
+.container {
+  display: flex;
+}
+
+.calculator {
+  width: 400px;
+  height: 600px;
+  border: 1px solid #000;
+  background-color: #ccc;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+}
+
+.calculator-screen {
+  display: flex;
   margin: auto;
-  padding: 5px;
-  border-radius: 10px;
-  /* box-shadow: 2px 2px 10px; */
+  margin-top: 20px;
+  height: 65px;
+  width: 85%;
+  background-color: white;
+  border-radius: 5px;
+  font-size: 25px;
+  padding: 5px 0 0 5px;
 }
 
-#answer {
-  width: 225px;
-  display: inline-block;
-  text-align: right;
-  margin: 5px;
-  padding: 10px;
-  border-radius: 10px;
-  background: lightgrey;
+.calculator-button {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-row-gap: 5px;
+  grid-column-gap: 5px;
+  margin: 40px 30px;
 }
-input {
-  cursor: pointer;
-  width: 65px;
-  height: 65px;
-  border-radius: 10px;
-  padding: 15px;
+
+.number {
+  width: 80px;
+  height: 80px;
   font-size: 20px;
-  margin: 10px;
-  border: none;
-  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
   box-shadow: 2px 2px 4px;
 }
-#AC {
-  background: #ff6347;
+
+.operator {
+  width: 80px;
+  height: 80px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 4px;
 }
-#equals {
-  background: #1e90ff;
+
+#plus {
+  background-color: #7c93df;
+  box-shadow: 2px 2px 4px;
+}
+
+#minus {
+  background-color: #f08080;
+  box-shadow: 2px 2px 4px;
+}
+
+#multiply {
+  background-color: #ffa500;
+  box-shadow: 2px 2px 4px;
+}
+#divide {
+  background-color: #20b1a9;
+}
+.number:hover {
+  cursor: pointer;
+}
+
+.operator:hover {
+  cursor: pointer;
+}
+
+.clear-button:hover {
+  cursor: pointer;
+}
+
+#clear {
+  background-color: red;
+  color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px;
 }
